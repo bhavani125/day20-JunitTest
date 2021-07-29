@@ -75,6 +75,11 @@ public class UserRegistrationTest {
     }
     //Creating testcases for Password
     @Test
+    public void givenPassword_WhenValid_ShouldReturnTrue() {
+        boolean result = userRegistration.validatePassword("Bhavani@123!$");
+        Assert.assertTrue(result);
+    }
+    @Test
     public void  givenPassword_WhenMin8Chars_ShouldReturnTrue() {
         boolean result = userRegistration.validatePassword("Bhavani@123");
         Assert.assertTrue(result);
@@ -102,6 +107,16 @@ public class UserRegistrationTest {
     @Test
     public void givenPassword_WhenNot1NumericNumber_ShouldReturnFalse () {
         boolean result = userRegistration.validatePassword("bhavani@");
+        Assert.assertFalse(result);
+    }
+    @Test
+    public void givenPassword_WhenHasExact1SpecialChar_ShouldReturnTrue() {
+        boolean result = userRegistration.validatePassword("$Bhavani12");
+        Assert.assertTrue(result);
+    }
+    @Test
+    public void givenPassword_WhenNotHasExact1SpecialChar_ShouldReturnFalse() {
+        boolean result = userRegistration.validatePassword("Bhavani123");
         Assert.assertFalse(result);
     }
 }
