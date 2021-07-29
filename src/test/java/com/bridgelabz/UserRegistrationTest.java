@@ -90,8 +90,18 @@ public class UserRegistrationTest {
         Assert.assertTrue(result);
     }
     @Test
-    public void givenPassword_WhenNotHaving1UpperCase_ShouldReturnTrue() {
+    public void givenPassword_WhenNotHaving1UpperCase_ShouldReturnFalse() {
         boolean result = userRegistration.validatePassword("bhavani@12");
+        Assert.assertFalse(result);
+    }
+    @Test
+    public void givenPassword_WhenAtleast1NumericNumber_ShouldReturnTrue() {
+        boolean result = userRegistration.validatePassword("123&Bha1$");
+        Assert.assertTrue(result);
+    }
+    @Test
+    public void givenPassword_WhenNot1NumericNumber_ShouldReturnFalse () {
+        boolean result = userRegistration.validatePassword("bhavani@");
         Assert.assertFalse(result);
     }
 }
