@@ -73,4 +73,15 @@ public class UserRegistrationTest {
         boolean result = userRegistration.validatePhoneNumber("91 830948");
         Assert.assertFalse(result);
     }
+    //Creating testcases for Password
+    @Test
+    public void  givenPassword_WhenMin8Chars_ShouldReturnTrue() {
+        boolean result = userRegistration.validatePassword("Bhavani@123");
+        Assert.assertTrue(result);
+    }
+    @Test
+    public void givenPassword_WhenNotHavingMin8Chars_ShouldReturnFalse() {
+        boolean result = userRegistration.validatePassword("Bhav2@");
+        Assert.assertFalse(result);
+    }
 }

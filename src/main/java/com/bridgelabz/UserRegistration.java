@@ -34,4 +34,11 @@ public class UserRegistration {
         Matcher matcher = pattern.matcher(number);
         return matcher.find();
     }
+    //Creating validatePassword Method
+    public boolean validatePassword(String password) {
+      String passwordPattern="(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[^A-Za-z0-9])(?=.{8,})";
+        Pattern pattern = Pattern.compile(passwordPattern);
+        Matcher matcher = pattern.matcher(password);
+        return matcher.find();
+    }
 }
