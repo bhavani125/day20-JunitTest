@@ -41,4 +41,5 @@ public class UserRegistration {
         Matcher matcher = pattern.matcher(password);
         return matcher.find();
     }
+
 }
