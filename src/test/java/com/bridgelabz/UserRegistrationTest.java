@@ -40,7 +40,7 @@ public class UserRegistrationTest {
         boolean result = userRegistration.validateLastName("Gi");
         Assert.assertFalse(result);
     }
-
+    //Creating testcases for emailId
     @Test
     public void  givenEmailId_WhenValid_ShouldReturnTrue() {
         boolean result = userRegistration.validateEmailId("abc.xyz@bl.co.in");
@@ -55,6 +55,22 @@ public class UserRegistrationTest {
     @Test
     public void givenMail_WithoutAtTHERate_ShouldReturnFalse() {
         boolean result = userRegistration.validateEmailId("girineni.gmail.com");
+        Assert.assertFalse(result);
+    }
+    //Creating testcases for mobileFormat
+    @Test
+    public void givenPhoneNumber_WhenValid_ShouldReturnTrue(){
+        boolean result = userRegistration.validatePhoneNumber("91 8309483421");
+        Assert.assertTrue(result);
+    }
+    @Test
+    public void givenPhoneNumber_WhenNoSpaceAfter1stCode_ShouldReturnFalse() {
+        boolean result = userRegistration.validatePhoneNumber("918309483421");
+        Assert.assertFalse(result);
+    }
+    @Test
+    public void  givenPhoneNumber_WhenSmall_ShouldReturnFalse() {
+        boolean result = userRegistration.validatePhoneNumber("91 830948");
         Assert.assertFalse(result);
     }
 }

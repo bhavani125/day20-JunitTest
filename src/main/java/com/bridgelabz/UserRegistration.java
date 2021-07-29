@@ -27,4 +27,11 @@ public class UserRegistration {
         return matcher.find();
 
     }
+    //Creating validatePhoneNumber Method
+    public boolean validatePhoneNumber(String number) {
+        String phonePattern = "^[0-9]{2}[ ][0-9]{10}";
+        Pattern pattern = Pattern.compile(phonePattern);
+        Matcher matcher = pattern.matcher(number);
+        return matcher.find();
+    }
 }
