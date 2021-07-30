@@ -6,6 +6,8 @@ import org.junit.Test;
 public class UserRegistrationTest {
     //Creating Object for UserRegistration class
     UserRegistration userRegistration = new UserRegistration();
+
+
     //testCases for validating  firstName
     @Test
     public void givenFirstName_whenValid_thenReturnTrue() {
@@ -118,5 +120,10 @@ public class UserRegistrationTest {
     public void givenPassword_WhenNotHasExact1SpecialChar_ShouldReturnFalse() {
         boolean result = userRegistration.validatePassword("Bhavani123");
         Assert.assertFalse(result);
+    }
+    @Test
+    public void givenEmailIds_WhenProper_ShouldReturnTrue() {
+        boolean result = userRegistration.validateEmailPatternTest();
+        Assert.assertTrue(result);
     }
 }

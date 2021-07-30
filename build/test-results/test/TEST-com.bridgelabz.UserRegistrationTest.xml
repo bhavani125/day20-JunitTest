@@ -1,27 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.bridgelabz.UserRegistrationTest" tests="21" skipped="0" failures="0" errors="0" timestamp="2021-07-29T14:46:02" hostname="DESKTOP-1A5CKOQ" time="0.081">
+<testsuite name="com.bridgelabz.UserRegistrationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-07-30T10:58:09" hostname="DESKTOP-1A5CKOQ" time="0.02">
   <properties/>
-  <testcase name="givenFirstName_whenValid_thenReturnTrue" classname="com.bridgelabz.UserRegistrationTest" time="0.007"/>
-  <testcase name="givenPhoneNumber_WhenValid_ShouldReturnTrue" classname="com.bridgelabz.UserRegistrationTest" time="0.0"/>
-  <testcase name="givenMail_WithoutName_ShouldReturnFalse" classname="com.bridgelabz.UserRegistrationTest" time="0.002"/>
-  <testcase name="givenPassword_WhenAtleast1NumericNumber_ShouldReturnTrue" classname="com.bridgelabz.UserRegistrationTest" time="0.003"/>
-  <testcase name="givenPhoneNumber_WhenNoSpaceAfter1stCode_ShouldReturnFalse" classname="com.bridgelabz.UserRegistrationTest" time="0.0"/>
-  <testcase name="givenEmailId_WhenValid_ShouldReturnTrue" classname="com.bridgelabz.UserRegistrationTest" time="0.002"/>
-  <testcase name="givenFirstName_WhenLessThanThreeChars_ShouldReturnFalse" classname="com.bridgelabz.UserRegistrationTest" time="0.0"/>
-  <testcase name="givenPassword_WhenNotHavingMin8Chars_ShouldReturnFalse" classname="com.bridgelabz.UserRegistrationTest" time="0.0"/>
-  <testcase name="givenLastName_WhenStartingNotCapital_ShouldReturnFalse" classname="com.bridgelabz.UserRegistrationTest" time="0.001"/>
-  <testcase name="givenPassword_WhenValid_ShouldReturnTrue" classname="com.bridgelabz.UserRegistrationTest" time="0.0"/>
-  <testcase name="givenPassword_WhenNotHasExact1SpecialChar_ShouldReturnFalse" classname="com.bridgelabz.UserRegistrationTest" time="0.001"/>
-  <testcase name="givenPassword_WhenAtleast1UpperCase_ShouldReturnTrue" classname="com.bridgelabz.UserRegistrationTest" time="0.002"/>
-  <testcase name="givenFirstName_WhenStartingNotCapital_ShouldReturnFalse" classname="com.bridgelabz.UserRegistrationTest" time="0.001"/>
-  <testcase name="givenPhoneNumber_WhenSmall_ShouldReturnFalse" classname="com.bridgelabz.UserRegistrationTest" time="0.001"/>
-  <testcase name="givenPassword_WhenHasExact1SpecialChar_ShouldReturnTrue" classname="com.bridgelabz.UserRegistrationTest" time="0.0"/>
-  <testcase name="givenPassword_WhenNot1NumericNumber_ShouldReturnFalse" classname="com.bridgelabz.UserRegistrationTest" time="0.005"/>
-  <testcase name="givenLastName_whenValid_thenReturnTrue" classname="com.bridgelabz.UserRegistrationTest" time="0.009"/>
-  <testcase name="givenLastName_WhenLessThanThreeChars_ShouldReturnFalse" classname="com.bridgelabz.UserRegistrationTest" time="0.002"/>
-  <testcase name="givenPassword_WhenNotHaving1UpperCase_ShouldReturnFalse" classname="com.bridgelabz.UserRegistrationTest" time="0.001"/>
-  <testcase name="givenPassword_WhenMin8Chars_ShouldReturnTrue" classname="com.bridgelabz.UserRegistrationTest" time="0.001"/>
-  <testcase name="givenMail_WithoutAtTHERate_ShouldReturnFalse" classname="com.bridgelabz.UserRegistrationTest" time="0.002"/>
-  <system-out><![CDATA[]]></system-out>
+  <testcase name="givenEmailIds_WhenProper_ShouldReturnTrue" classname="com.bridgelabz.UserRegistrationTest" time="0.02"/>
+  <system-out><![CDATA[abc@yahoo.com - valid 
+]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
