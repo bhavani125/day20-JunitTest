@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.bridgelabz.UserRegistrationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-07-30T10:58:09" hostname="DESKTOP-1A5CKOQ" time="0.02">
+<testsuite name="com.bridgelabz.UserRegistrationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-07-30T13:16:00" hostname="DESKTOP-1A5CKOQ" time="0.058">
   <properties/>
-  <testcase name="givenEmailIds_WhenProper_ShouldReturnTrue" classname="com.bridgelabz.UserRegistrationTest" time="0.02"/>
-  <system-out><![CDATA[abc@yahoo.com - valid 
-]]></system-out>
+  <testcase name="givenFirstName_whenValid_thenReturnTrue" classname="com.bridgelabz.UserRegistrationTest" time="0.058"/>
+  <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
